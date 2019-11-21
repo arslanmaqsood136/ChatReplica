@@ -1,0 +1,16 @@
+<ul class="nav flex-column user-section">
+  <li
+    *ngFor="let user of users"
+    (click)="onChange($event, user.messages)"
+    class="nav-item"
+  >
+    <!-- <div class="user-profile">
+      <h5>{{ user.name }}</h5>
+    </div> -->
+    <a class="nav-link user-profile" href="#"
+      >{{ user.name }}<br /><span class="message">
+        {{ (user?.messages)[user.messages.length - 1]?.message }}</span
+      ></a
+    >
+  </li>
+</ul>
