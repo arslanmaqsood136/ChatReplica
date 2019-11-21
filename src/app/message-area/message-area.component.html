@@ -1,8 +1,11 @@
-<div [style.margin-top.px]="50">
-  <div *ngFor="let message of messages" class="outgoing_msg">
-    <div class="sent_msg">
-      <p>{{ message.message }}</p>
+<div class="searchSection">
+  <div [style.margin-top.px]="50" [style.padding-right.px]="5">
+    <div *ngFor="let message of messages" class="outgoing_msg">
+      <div class="sent_msg">
+        <p>{{ message.message }}</p>
+      </div>
     </div>
   </div>
+  <app-search-message></app-search-message>
+  <div></div>
 </div>
-<app-search-message></app-search-message>

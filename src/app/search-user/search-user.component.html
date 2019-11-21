@@ -1,10 +1,13 @@
-<div class="form-group">
-  <input
-    type="text"
-    class="form-control"
-    (keyup)="searchUser($event)"
-    id="user"
-    [(ngModel)]="searchTerm"
-    placeholder="Search User"
-  />
+<div class="heading_search">
+  <h3>Search</h3>
+  <div class="form-group">
+    <input
+      type="text"
+      class="form-control"
+      (keyup)="searchUser($event)"
+      id="user"
+      [(ngModel)]="searchTerm"
+      placeholder="Search User"
+    />
+  </div>
 </div>
